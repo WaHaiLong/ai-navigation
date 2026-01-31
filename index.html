@@ -110,6 +110,18 @@
             background: linear-gradient(135deg, #5a6fd8, #6a4392);
         }
         
+        .card-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .card-links a {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+        }
+        
         footer {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -156,7 +168,10 @@
                 <div class="card">
                     <h3>OpenClaw</h3>
                     <p>跨平台消息应用网关，支持WhatsApp、Telegram、Discord和iMessage，连接AI代理，让您随时随地与AI交流。</p>
-                    <a href="https://github.com/openclaw/openclaw" target="_blank">访问官网</a>
+                    <div class="card-links">
+                        <a href="https://github.com/openclaw/openclaw" target="_blank">GitHub仓库</a>
+                        <a href="https://docs.openclaw.ai/" target="_blank">官方文档</a>
+                    </div>
                 </div>
             </div>
         </section>
